@@ -42,3 +42,5 @@ data ⊥ : Set where
     P zero = Nat
     P (suc zero)  = ⊥
     P n = Nat
+
+
