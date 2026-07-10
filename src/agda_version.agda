@@ -1,6 +1,6 @@
 
 -- In this document, we are following the seminar
-module seminar where
+module agda_version where
 
 import Relation.Binary.PropositionalEquality as Eq
 open Eq using (subst; _≡_; refl )
@@ -42,7 +42,3 @@ data ⊥ : Set where
     P zero = Nat
     P (suc zero)  = ⊥
     P n = Nat
-
-
-broken : _+_ ≡ _+_ -> ⊥
-broken eq = 0not1 (sym (cong ((λ f -> f 1 0)) {!eq!}))
