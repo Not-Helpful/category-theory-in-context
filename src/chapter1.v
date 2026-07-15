@@ -5,7 +5,3 @@ Require Import Arith.
 
 Check Vector.t.
 
-Fixpoint append
-  {A : Type} {n m : nat}
-  (a : t A n) (b : t A m) : t A (n + m).
-Proof.
